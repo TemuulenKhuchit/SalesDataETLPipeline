@@ -1,0 +1,30 @@
+2025-05-18 20:38:01,018 - INFO - Found 2 files.
+2025-05-18 20:38:01,019 - INFO - Processing file: D:\1. Coding\Python\SalesDataETLPipeline\resources\input\sales_20250501.csv
+2025-05-18 20:38:01,020 - INFO - Processing file: D:\1. Coding\Python\SalesDataETLPipeline\resources\input\sales_20250502.csv
+2025-05-18 20:38:01,118 - ERROR - Unexpected error in D:\1. Coding\Python\SalesDataETLPipeline\resources\input\sales_20250502.csv: this function got an unexpected keyword argument 'port'
+Traceback (most recent call last):
+  File "D:\1. Coding\Python\SalesDataETLPipeline\app\etl_runner.py", line 14, in process_file
+    insert_sales_data(data)
+    ~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\1. Coding\Python\SalesDataETLPipeline\app\database.py", line 10, in insert_sales_data
+    connection = get_connection()
+  File "D:\1. Coding\Python\SalesDataETLPipeline\app\database.py", line 6, in get_connection
+    return cx_Oracle.connect(**DB_CONFIG)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: this function got an unexpected keyword argument 'port'
+2025-05-18 20:38:01,119 - ERROR - Unexpected error in D:\1. Coding\Python\SalesDataETLPipeline\resources\input\sales_20250501.csv: this function got an unexpected keyword argument 'port'
+Traceback (most recent call last):
+  File "D:\1. Coding\Python\SalesDataETLPipeline\app\etl_runner.py", line 14, in process_file
+    insert_sales_data(data)
+    ~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\1. Coding\Python\SalesDataETLPipeline\app\database.py", line 10, in insert_sales_data
+    connection = get_connection()
+  File "D:\1. Coding\Python\SalesDataETLPipeline\app\database.py", line 6, in get_connection
+    return cx_Oracle.connect(**DB_CONFIG)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: this function got an unexpected keyword argument 'port'
+2025-05-18 20:39:23,943 - INFO - Found 2 files.
+2025-05-18 20:39:23,944 - INFO - Processing file: D:\1. Coding\Python\SalesDataETLPipeline\resources\input\sales_20250501.csv
+2025-05-18 20:39:23,945 - INFO - Processing file: D:\1. Coding\Python\SalesDataETLPipeline\resources\input\sales_20250502.csv
+2025-05-18 20:39:24,378 - INFO - Successfully processed: D:\1. Coding\Python\SalesDataETLPipeline\resources\input\sales_20250501.csv
+2025-05-18 20:39:25,084 - INFO - Successfully processed: D:\1. Coding\Python\SalesDataETLPipeline\resources\input\sales_20250502.csv
